@@ -1,11 +1,11 @@
 ---
-title: Часто задаваемые вопросы (FAQ)
+title: FAQ
 description: Ответы на популярные вопросы пользователей ShotSCOPE SPM
 ---
 
 # 🤔 Часто задаваемые вопросы
 
-Здесь собраны ответы на вопросы, которые чаще всего задают пользователи ShotSCOPE SPM. Если вы не нашли то, что искали, напишите нам на [support@shotscope.ru](mailto:support@shotscope.ru) или в Telegram-канал сообщества.
+Здесь собраны ответы на вопросы, которые чаще всего задают пользователи ShotSCOPE SPM. Если вы не нашли то, что искали, напишите нам на [notdonebyone@internet.ru](mailto:notdonebyone@internet.ru) или в Telegram-канал сообщества.
 
 ---
 
