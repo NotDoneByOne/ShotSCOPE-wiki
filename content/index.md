@@ -4,9 +4,6 @@ description: "Открытая энциклопедия для стрелков�
 aliases: [главная, wiki, shotscope wiki]
 cssclasses: [wide-page]
 ---
-
-# 🎯 Добро пожаловать в базу знаний ShotSCOPE
-
 Привет! Мы — команда ShotSCOPE, студенты, тренеры и спортсмены, которые верят, что **информация должна быть открытой, а прогресс — измеримым**.
 
 Это пространство создано для вас:
@@ -63,7 +60,7 @@ cssclasses: [wide-page]
 3. **Предложить тему** — даже если не хотите писать сами, просто скажите, чего не хватает
 
 👉 [[Сообщество/Как стать автором|Подробная инструкция для контрибьюторов]]
-👉 [[https://github.com/NotDoneByOne/ShotSCOPE-wiki/blob/v4/STYLE_GUIDE.md|Стайлгайд]] и [[https://github.com/NotDoneByOne/ShotSCOPE-wiki/blob/v4/TEMPLATES.md|Шаблоны статей]]
+👉 [Стайлгайд](https://github.com/NotDoneByOne/ShotSCOPE-wiki/blob/v4/STYLE_GUIDE.md) и [Шаблоны статей](https://github.com/NotDoneByOne/ShotSCOPE-wiki/blob/v4/TEMPLATES.md)
 
 > [!note] Лицензия и авторство
 > Весь контент распространяется под лицензией [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru). Если вы автор — указывайте свое имя в конце статьи. Если редактируете — сохраняйте имена предыдущих авторов. Уважение к труду — наше всё.
