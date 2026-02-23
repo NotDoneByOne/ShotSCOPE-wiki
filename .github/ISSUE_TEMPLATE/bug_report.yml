@@ -1,0 +1,30 @@
+name: "🐛 Сообщить об ошибке в контенте"
+description: Нашли опечатку, битую ссылку или неработающий код? Сообщите нам.
+title: "[BUG]: "
+labels: ["bug", "content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что помогаете делать Базу знаний лучше! Пожалуйста, заполните информацию ниже.
+  - type: input
+    id: page
+    attributes:
+      label: Страница с ошибкой
+      description: Укажите ссылку на wiki.shotscope.ru или путь к файлу в репозитории.
+      placeholder: wiki.shotscope.ru/Guide/Rules/IPSC
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Описание проблемы
+      description: Что именно не так? (Опечатка, неработающая ссылка, устаревшие данные)
+      placeholder: В третьем абзаце слово "выстрел" написано с ошибкой.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Предлагаемое исправление
+      description: Как, по-вашему, это должно выглядеть правильно?

@@ -1,0 +1,40 @@
+name: "💡 Запрос на новую статью / Идея"
+description: Есть тема, которую стоит раскрыть в Базе знаний?
+title: "[IDEA]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Расскажите, какой информации не хватает.
+  - type: input
+    id: theme
+    attributes:
+      label: Тема статьи
+      description: Коротко и ясно.
+      placeholder: Настройка спортивного питания перед соревнованиями
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Категория
+      description: К какому разделу это относится?
+      options:
+        - ShotSCOPE (App)
+        - Тренерам
+        - Спортсменам
+        - Антидопинг
+        - Правила и регламенты
+        - Оружие и экипировка
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: О чем именно нужно написать?
+      description: Опишите структуру или основные мысли, которые вы хотели бы видеть.
+      placeholder: Было бы круто узнать о... 1. Важность воды. 2. Углеводная загрузка...
+    validations:
+      required: true

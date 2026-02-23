@@ -1,17 +1,39 @@
-# Quartz v4
+# 🎯 База знаний ShotSCOPE
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Добро пожаловать в официальный репозиторий базы знаний проекта **ShotSCOPE**. 
+Этот сайт (доступный по адресу [wiki.shotscope.ru](https://wiki.shotscope.ru)) создан для того, чтобы стать открытой, живой и всегда актуальной энциклопедией для стрелкового сообщества.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Здесь вы найдете всё: от инструкций по работе с нашим приложением до глубоких материалов по тактике, правилам и антидопингу.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## 🚀 О проекте
 
-## Sponsors
+Мы — команда студентов, создающих умного помощника для стрелков. База знаний — это наш способ поделиться опытом и структурировать информацию, которая помогает расти.
+*   **Сайт базы знаний:** [wiki.shotscope.ru](https://wiki.shotscope.ru)
+*   **Приложение ShotSCOPE:** [shotscope.ru](https://shotscope.ru)
+*   **Технологии:** Сайт собирается статическим генератором [Quartz](https://quartz.jzhao.xyz/) из Markdown-файлов, которые вы видите в этом репозитории. Удобнее всего редактировать их в [Obsidian](https://obsidian.md/).
+*   **Разработчки:** [NotDoneByOne](https://notdonebyone.ru)
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+## 🤝 Как помочь проекту?
+
+Мы верим в силу сообщества. Если вы тренер, спортсмен или просто увлеченный человек, ваши знания могут быть бесценны!
+
+1.  **Нашли ошибку или опечатку?** Создайте **Issue** с пометкой `bug`.
+2.  **Хотите предложить новую тему?** Создайте **Issue** с пометкой `enhancement`.
+3.  **Хотите написать или исправить статью сами?**
+    *   Прочтите наш гайд для контрибьюторов: [`CONTRIBUTING.md`](CONTRIBUTING.md).
+    *   Ознакомьтесь со стилем оформления: [`STYLE_GUIDE.md`](STYLE_GUIDE.md).
+    *   Сделайте Fork репозитория, внесите изменения и откройте Pull Request (PR), используя [шаблон](.github/PULL_REQUEST_TEMPLATE.md).
+
+Мы особенно приветствуем правки, касающиеся раздела `ShotSCOPE App`, чтобы документация всегда шла в ногу с обновлениями приложения.
+
+## 📜 Лицензия
+
+Весь контент (тексты, изображения, инструкции) распространяется под лицензией 
+**Creative Commons Attribution-ShareAlike 4.0 International License**. 
+Это означает, что вы можете делиться и адаптировать материалы, но с обязательным указанием авторства и распространением на тех же условиях.
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg

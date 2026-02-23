@@ -8,47 +8,47 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "ShotSCOPE",
+    pageTitleSuffix: " · ShotSCOPE Wiki",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "ru-RU",
+    baseUrl: "shotscope.ru",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Nunito",
+        body: "Nunito",
         code: "IBM Plex Mono",
       },
       colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+         lightMode: {
+          light: "#FFFFFF",              // --bg-primary
+          lightgray: "#F2F2F2",           // --bg-secondary
+          gray: "rgba(45, 68, 80, 0.1)", // --border-light
+          darkgray: "#2D4450",            // --text-secondary
+          dark: "#2D3E50",                // --text-primary
+          secondary: "#DA4453",            // --primary
+          tertiary: "#3498DB",             // --secondary
+          highlight: "rgba(218, 68, 83, 0.15)", // primary with opacity
+          textHighlight: "#FFA07A88",       // --tertiary with opacity
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#2D3E50",                // --dark-bg-primary
+          lightgray: "#1F2B38",            // --dark-bg-secondary
+          gray: "rgba(255, 255, 255, 0.1)", // --dark-border
+          darkgray: "#CCCCCC",              // --dark-text-secondary
+          dark: "#FFFFFF",                   // --dark-text-primary
+          secondary: "#DA4453",              // --primary (kept for brand consistency)
+          tertiary: "#3498DB",                // --secondary
+          highlight: "rgba(218, 68, 83, 0.25)", // primary with opacity for dark mode
+          textHighlight: "#FFA07A88",          // --tertiary with opacity
         },
       },
     },
