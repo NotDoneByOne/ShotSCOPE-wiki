@@ -103,12 +103,14 @@ ShotSCOPE делают не гигантские корпорации, а обы
 
 Мы — просто люди, которые делают проект для таких же людей. Без пафоса, без громких обещаний.
 
-📧 notdonebyone@internet.ru
-💬 [Telegram NotDoneByOne](https://t.me/notdonebyone)
-🐙 **GitHub:** [ShotSCOPE-wiki](https://github.com/NotDoneByOne/ShotSCOPE-wiki)
+- 📧 notdonebyone@internet.ru
+- 💬 [Telegram NotDoneByOne](https://t.me/notdonebyone)
+- 🐙 **GitHub:** [ShotSCOPE-wiki](https://github.com/NotDoneByOne/ShotSCOPE-wiki)
 
 ---
 
 *Сделано неравнодушными. Для неравнодушных.*
 
 *Последнее обновление: 23 февраля 2026*
+
+---
