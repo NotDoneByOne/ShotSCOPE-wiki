@@ -29,17 +29,6 @@ const config: QuartzConfig = {
       },
       colors: {
          lightMode: {
-          light: "#FFFFFF",              // --bg-primary
-          lightgray: "#F2F2F2",           // --bg-secondary
-          gray: "rgba(45, 68, 80, 0.1)", // --border-light
-          darkgray: "#2D4450",            // --text-secondary
-          dark: "#2D3E50",                // --text-primary
-          secondary: "#DA4453",            // --primary
-          tertiary: "#3498DB",             // --secondary
-          highlight: "rgba(218, 68, 83, 0.15)", // primary with opacity
-          textHighlight: "#FFA07A88",       // --tertiary with opacity
-        },
-        darkMode: {
           light: "#2D3E50",                // --dark-bg-primary
           lightgray: "#1F2B38",            // --dark-bg-secondary
           gray: "rgba(255, 255, 255, 0.1)", // --dark-border
@@ -49,6 +38,17 @@ const config: QuartzConfig = {
           tertiary: "#3498DB",                // --secondary
           highlight: "rgba(218, 68, 83, 0.25)", // primary with opacity for dark mode
           textHighlight: "#FFA07A88",          // --tertiary with opacity
+        },
+        darkMode: {
+          light: "#FFFFFF",              // --bg-primary
+          lightgray: "#F2F2F2",           // --bg-secondary
+          gray: "rgba(45, 68, 80, 0.1)", // --border-light
+          darkgray: "#2D4450",            // --text-secondary
+          dark: "#2D3E50",                // --text-primary
+          secondary: "#DA4453",            // --primary
+          tertiary: "#3498DB",             // --secondary
+          highlight: "rgba(218, 68, 83, 0.15)", // primary with opacity
+          textHighlight: "#FFA07A88",       // --tertiary with opacity
         },
       },
     },
