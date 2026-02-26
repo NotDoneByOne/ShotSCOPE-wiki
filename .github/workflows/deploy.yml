@@ -33,6 +33,12 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Clean cache
+        run: |
+          rm -rf public
+          rm -rf .quartz-cache
+          echo "✅ Cache cleaned"
+
       - name: Build Quartz
         run: npx quartz build
 
