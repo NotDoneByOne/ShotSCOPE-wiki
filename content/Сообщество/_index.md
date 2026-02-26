@@ -75,9 +75,9 @@ description: Место, где спортсмены, тренеры и энту
 
 Мы всегда на связи:
 
-📧 Mail: notdonebyone@internet.ru
-💬 TG: https://t.me/notdonebyone
-🐙 GitHub: [github.com/ShotSCOPE/ShotSCOPE-wiki](https://github.com/ShotSCOPE/ShotSCOPE-wiki)
+- 📧 Mail: notdonebyone@internet.ru
+- 💬 TG: https://t.me/notdonebyone
+- 🐙 GitHub: [github.com/ShotSCOPE/ShotSCOPE-wiki](https://github.com/ShotSCOPE/ShotSCOPE-wiki)
 
 ---
 
@@ -90,3 +90,5 @@ ShotSCOPE растёт благодаря вам. Каждое письмо, к�
 ---
 
 *Последнее обновление: 23 февраля 2026*
+
+---
