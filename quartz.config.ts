@@ -27,19 +27,11 @@ const config: QuartzConfig = {
         body: "Inter",
         code: "IBM Plex Mono",
       },
+      // Внимание: имена полей означают светлость самого цвета, а не режим.
+      // `light` — фон, `dark` — основной текст. Поэтому в lightMode фон
+      // светлый и текст тёмный, и наоборот в darkMode.
       colors: {
          lightMode: {
-          light: "#2D3E50",                // --dark-bg-primary
-          lightgray: "#1F2B38",            // --dark-bg-secondary
-          gray: "rgba(255, 255, 255, 0.1)", // --dark-border
-          darkgray: "#CCCCCC",              // --dark-text-secondary
-          dark: "#FFFFFF",                   // --dark-text-primary
-          secondary: "#DA4453",              // --primary (kept for brand consistency)
-          tertiary: "#3498DB",                // --secondary
-          highlight: "rgba(218, 68, 83, 0.25)", // primary with opacity for dark mode
-          textHighlight: "#FFA07A88",          // --tertiary with opacity
-        },
-        darkMode: {
           light: "#FFFFFF",              // --bg-primary
           lightgray: "#F2F2F2",           // --bg-secondary
           gray: "rgba(45, 68, 80, 0.1)", // --border-light
@@ -49,6 +41,17 @@ const config: QuartzConfig = {
           tertiary: "#3498DB",             // --secondary
           highlight: "rgba(218, 68, 83, 0.15)", // primary with opacity
           textHighlight: "#FFA07A88",       // --tertiary with opacity
+        },
+        darkMode: {
+          light: "#2D3E50",                // --dark-bg-primary
+          lightgray: "#1F2B38",            // --dark-bg-secondary
+          gray: "rgba(255, 255, 255, 0.1)", // --dark-border
+          darkgray: "#CCCCCC",              // --dark-text-secondary
+          dark: "#FFFFFF",                   // --dark-text-primary
+          secondary: "#DA4453",              // --primary (kept for brand consistency)
+          tertiary: "#3498DB",                // --secondary
+          highlight: "rgba(218, 68, 83, 0.25)", // primary with opacity for dark mode
+          textHighlight: "#FFA07A88",          // --tertiary with opacity
         },
       },
     },

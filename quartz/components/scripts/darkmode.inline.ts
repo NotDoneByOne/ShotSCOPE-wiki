@@ -1,8 +1,25 @@
-const userPref = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
-const currentTheme = localStorage.getItem("theme") ?? userPref
-document.documentElement.setAttribute("saved-theme", currentTheme)
+const STORAGE_KEY = "theme"
 
-const emitThemeChangeEvent = (theme: "light" | "dark") => {
+type Theme = "light" | "dark"
+
+const systemTheme = (): Theme =>
+  window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
+
+// Явный выбор пользователя. Пока его нет, сайт следует системной теме.
+// Значение валидируется: посторонняя строка в localStorage не должна
+// попасть в атрибут `saved-theme`.
+const savedTheme = (): Theme | null => {
+  const value = localStorage.getItem(STORAGE_KEY)
+  return value === "light" || value === "dark" ? value : null
+}
+
+const applyTheme = (theme: Theme) => {
+  document.documentElement.setAttribute("saved-theme", theme)
+}
+
+applyTheme(savedTheme() ?? systemTheme())
+
+const emitThemeChangeEvent = (theme: Theme) => {
   const event: CustomEventMap["themechange"] = new CustomEvent("themechange", {
     detail: { theme },
   })
@@ -13,15 +30,21 @@ document.addEventListener("nav", () => {
   const switchTheme = () => {
     const newTheme =
       document.documentElement.getAttribute("saved-theme") === "dark" ? "light" : "dark"
-    document.documentElement.setAttribute("saved-theme", newTheme)
-    localStorage.setItem("theme", newTheme)
+    applyTheme(newTheme)
+    localStorage.setItem(STORAGE_KEY, newTheme)
     emitThemeChangeEvent(newTheme)
   }
 
   const themeChange = (e: MediaQueryListEvent) => {
+    // Явный выбор пользователя важнее системной темы. Раньше здесь
+    // безусловно писался localStorage, поэтому первое же системное
+    // переключение создавало «выбор», и сайт навсегда перестал следовать
+    // системе.
+    if (savedTheme() !== null) {
+      return
+    }
     const newTheme = e.matches ? "dark" : "light"
-    document.documentElement.setAttribute("saved-theme", newTheme)
-    localStorage.setItem("theme", newTheme)
+    applyTheme(newTheme)
     emitThemeChangeEvent(newTheme)
   }
 
