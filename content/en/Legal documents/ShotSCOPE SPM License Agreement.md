@@ -85,19 +85,19 @@ translationKey: eula-spm
 
 **4.3. Methods of processing personal data.** The User hereby consents to the Operator performing the following actions with their personal data in accordance with Article 3 of Federal Law No. 152-FZ "On Personal Data":
 
-- **Collection** - obtaining personal data from the User when using the Application
-- **Recording** - fixing personal data on tangible media
-- **Systematization** - arranging data to facilitate working with it
-- **Accumulation** - storing and accumulating data in information systems
-- **Storage** - ensuring the safety of data for the term of the Agreement
-- **Clarification (updating, changing)** - making changes to keep data up to date
-- **Retrieval** - using previously stored data
-- **Use** - applying personal data to achieve the purposes of processing
-- **Transfer (dissemination, provision, access)** - disclosing data to third parties in the cases provided for in section 4.6
-- **Depersonalization** - actions as a result of which it is impossible, without using additional information, to determine whether data belongs to a specific person
-- **Blocking** - temporary suspension of data processing
-- **Deletion** - destruction of data in the information system
-- **Destruction** - actions as a result of which it becomes impossible to restore the content of the data
+- **Collection** — obtaining personal data from the User when using the Application
+- **Recording** — fixing personal data on tangible media
+- **Systematization** — arranging data to facilitate working with it
+- **Accumulation** — storing and accumulating data in information systems
+- **Storage** — ensuring the safety of data for the term of the Agreement
+- **Clarification (updating, changing)** — making changes to keep data up to date
+- **Retrieval** — using previously stored data
+- **Use** — applying personal data to achieve the purposes of processing
+- **Transfer (dissemination, provision, access)** — disclosing data to third parties in the cases provided for in section 4.6
+- **Depersonalization** — actions as a result of which it is impossible, without using additional information, to determine whether data belongs to a specific person
+- **Blocking** — temporary suspension of data processing
+- **Deletion** — destruction of data in the information system
+- **Destruction** — actions as a result of which it becomes impossible to restore the content of the data
 
 **4.4. Purposes of processing.** Data is processed for the following purposes:
 

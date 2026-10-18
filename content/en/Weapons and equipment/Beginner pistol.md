@@ -8,13 +8,13 @@ date: "2026-10-18"
 modified: "2026-10-18"
 ---
 
-The easiest start for a new shooter is a 10 m air pistol. It is inexpensive, safe to train with, and teaches the basics: stance, grip, aiming, and trigger control.
+The easiest start for a new shooter is a 10 m air pistol. It is inexpensive, safe to train with, and teaches the basics: stance, grip, aiming, and trigger control.
 
 ## Why start with air
 
 In most cases an air pistol does not require a firearms license, but this depends on your country's law and the power of the model. Check the requirements in advance.
 
-Ammunition is cheap, the sound is quiet, and you can train indoors at 10 m. There is no strong recoil, so you do not learn to flinch. The skills later carry over to a smallbore pistol.
+Ammunition is cheap, the sound is quiet, and you can train indoors at 10 m. There is no strong recoil, so you do not learn to flinch. The skills later carry over to a smallbore pistol.
 
 Spend the first months on technique, not on changing weapons. Keeping the same pistol helps you notice your own progress.
 

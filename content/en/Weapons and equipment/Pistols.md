@@ -14,9 +14,9 @@ A sport pistol does one job: it sends the bullet to the same point again and aga
 
 ISSF rules describe several groups of pistols. Look up exact event names and equipment requirements in the current rules.
 
-- Air pistol, 4.5 mm caliber, 10 m distance.
-- Smallbore pistol chambered for .22 LR rimfire: free pistol at 50 m, rapid fire pistol and sport pistol at 25 m.
-- Center fire pistol at 25 m.
+- Air pistol, 4.5 mm caliber, 10 m distance.
+- Smallbore pistol chambered for .22 LR rimfire: free pistol at 50 m, rapid fire pistol and sport pistol at 25 m.
+- Center fire pistol at 25 m.
 
 Air pistol is the most accessible entry to the sport: cheap ammunition, a short distance, and you can train indoors. Smallbore pistols require a firearms license and a range with the right distance.
 

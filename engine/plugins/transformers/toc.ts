@@ -25,6 +25,9 @@ interface TocEntry {
 }
 
 const slugAnchor = new Slugger()
+// Typography puts no-break spaces into headings; anchors treat them as ordinary spaces.
+export const anchorText = (text: string) => text.replace(/\u00a0/g, " ")
+
 export const TableOfContents: WikiTransformerPlugin<Partial<Options>> = (userOpts) => {
   const opts = { ...defaultOptions, ...userOpts }
   return {
@@ -45,7 +48,7 @@ export const TableOfContents: WikiTransformerPlugin<Partial<Options>> = (userOpt
                   toc.push({
                     depth: node.depth,
                     text,
-                    slug: slugAnchor.slug(text),
+                    slug: slugAnchor.slug(anchorText(text)),
                   })
                 }
               })

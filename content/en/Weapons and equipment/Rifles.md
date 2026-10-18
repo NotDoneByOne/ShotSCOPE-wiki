@@ -7,7 +7,7 @@ tags: ["weapons", "weapons/rifles", "weapons/rifles/air"]
 date: "2026-10-18"
 modified: "2026-10-18"
 ---
-A sport rifle for rifle shooting is a precise tool with an adjustable fit. Most ISSF disciplines use an air rifle at 10 m or a smallbore rifle at 50 m.
+A sport rifle for rifle shooting is a precise tool with an adjustable fit. Most ISSF disciplines use an air rifle at 10 m or a smallbore rifle at 50 m.
 
 ## Two main types
 
@@ -15,8 +15,8 @@ They differ in caliber, shot energy, and distance. The fit, sights, and trigger 
 
 | Parameter | Air rifle | Smallbore rifle |
 | --- | --- | --- |
-| Distance | 10 m | 50 m |
-| Caliber | 4.5 mm | 5.6 mm (.22 LR) |
+| Distance | 10 m | 50 m |
+| Caliber | 4.5 mm | 5.6 mm (.22 LR) |
 | Positions | Standing | Prone, standing, kneeling |
 
 Exact requirements for weight, caliber, and equipment are in the ISSF rules at [issf-sports.org/rules](https://issf-sports.org/rules) and in [[en/Rules and regulations/_index|Rules and regulations]].
@@ -27,13 +27,13 @@ Compressed air or carbon dioxide from a cylinder pushes the pellet. The shot is 
 
 The main requirement is repeatability. Pellet velocity must stay the same from shot to shot, or grouping suffers even with a perfect position.
 
-The consumable is a 4.5 mm lead pellet. Pellet batches matter too, so athletes match them to a specific barrel.
+The consumable is a 4.5 mm lead pellet. Pellet batches matter too, so athletes match them to a specific barrel.
 
 ## Smallbore rifle
 
-It fires .22 LR cartridges. At 50 m, wind and cartridge quality visibly affect the hit. Recoil is small but higher than with an air rifle.
+It fires .22 LR cartridges. At 50 m, wind and cartridge quality visibly affect the hit. Recoil is small but higher than with an air rifle.
 
-A smallbore rifle is heavier, with a more complex stock and more adjustments. The 50 m events use three positions, so the stock must adapt to each of them.
+A smallbore rifle is heavier, with a more complex stock and more adjustments. The 50 m events use three positions, so the stock must adapt to each of them.
 
 ## What a rifle consists of
 

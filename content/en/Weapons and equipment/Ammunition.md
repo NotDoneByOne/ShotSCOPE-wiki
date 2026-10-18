@@ -8,11 +8,11 @@ date: 2026-10-18
 modified: 2026-10-18
 ---
 
-In rifle and pistol shooting, the result depends not only on you and your weapon but also on the ammunition. Air weapons use pellets, and smallbore weapons use .22 LR (5.6 mm) rimfire cartridges.
+In rifle and pistol shooting, the result depends not only on you and your weapon but also on the ammunition. Air weapons use pellets, and smallbore weapons use .22 LR (5.6 mm) rimfire cartridges.
 
 ## Air weapon pellets
 
-Air pellets are lead or lead-alloy wadcutters with a wide head and a skirt. Sport air weapons use 4.5 mm caliber. The skirt expands under air pressure and seals the barrel.
+Air pellets are lead or lead-alloy wadcutters with a wide head and a skirt. Sport air weapons use 4.5 mm caliber. The skirt expands under air pressure and seals the barrel.
 
 The main parameters are caliber, weight, and head size. A weapon may shoot one brand better than another even when the caliber matches. So you match pellets to a specific barrel, not to the price.
 

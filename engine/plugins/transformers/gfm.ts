@@ -1,12 +1,36 @@
 import remarkGfm from "remark-gfm"
 import smartypants from "remark-smartypants"
 import { WikiTransformerPlugin } from "../types"
-import rehypeSlug from "rehype-slug"
+import Slugger from "github-slugger"
+import { visit } from "unist-util-visit"
+import { Element, ElementContent, Root } from "hast"
+import { anchorText } from "./toc"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 
 export interface Options {
   enableSmartyPants: boolean
   linkHeadings: boolean
+}
+
+const headingTags = new Set(["h1", "h2", "h3", "h4", "h5", "h6"])
+
+function textOf(node: ElementContent): string {
+  if (node.type === "text") return node.value
+  if (node.type === "element") return node.children.map(textOf).join("")
+  return ""
+}
+
+// Same ids as rehype-slug, except that no-break spaces count as spaces.
+function rehypeHeadingIds() {
+  const slugs = new Slugger()
+  return (tree: Root) => {
+    slugs.reset()
+    visit(tree, "element", (node: Element) => {
+      if (headingTags.has(node.tagName) && !node.properties.id) {
+        node.properties.id = slugs.slug(anchorText(node.children.map(textOf).join("")))
+      }
+    })
+  }
 }
 
 const defaultOptions: Options = {
@@ -24,7 +48,7 @@ export const GitHubFlavoredMarkdown: WikiTransformerPlugin<Partial<Options>> = (
     htmlPlugins() {
       if (opts.linkHeadings) {
         return [
-          rehypeSlug,
+          rehypeHeadingIds,
           [
             rehypeAutolinkHeadings,
             {

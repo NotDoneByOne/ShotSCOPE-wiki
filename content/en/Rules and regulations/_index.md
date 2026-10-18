@@ -15,7 +15,7 @@ A new edition of the ISSF rules has been in force since January 1, 2026, with ch
 | --- | --- |
 | All individual finals | 8 finalists instead of 6 (for rapid-fire pistol, trap, and skeet) |
 | Mixed team finals | A single final for 4 teams, with no separate medal matches |
-| Rapid-fire pistol (25 m) | New final format, tested at the 2025 World Cup |
+| Rapid-fire pistol (25 m) | New final format, tested at the 2025 World Cup |
 | Rifle (3 positions) | New final format |
 | Trap and skeet | New final formats and video assistant referee (VAR) |
 | Equipment | Changed fabric stiffness rules and tolerances for rifle shooters |

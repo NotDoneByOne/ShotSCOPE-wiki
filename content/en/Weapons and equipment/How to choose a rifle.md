@@ -11,9 +11,9 @@ Choose your first rifle for your discipline and your height, not for a famous na
 
 ## Start with the discipline
 
-For most beginners, the first step is a 10 m air rifle. It costs less to run, is quieter, and needs no special range.
+For most beginners, the first step is a 10 m air rifle. It costs less to run, is quieter, and needs no special range.
 
-A smallbore rifle is for when you are ready to shoot at 50 m. It needs a range of the right length and ammunition access, and the weapon must be registered by law.
+A smallbore rifle is for when you are ready to shoot at 50 m. It needs a range of the right length and ammunition access, and the weapon must be registered by law.
 
 ## Talk to your coach
 
