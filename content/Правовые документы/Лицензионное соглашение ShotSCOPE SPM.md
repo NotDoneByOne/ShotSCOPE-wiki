@@ -12,6 +12,8 @@ aliases:
   - пользовательское-соглашение
   - eula
 enableToc: true
+lang: ru
+translationKey: eula-spm
 ---
 
 # ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ

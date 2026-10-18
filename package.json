@@ -1,23 +1,22 @@
 {
-  "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "name": "shotscope-wiki",
+  "description": "База знаний ShotSCOPE — wiki.shotscope.ru",
   "private": true,
-  "version": "4.5.2",
+  "version": "1.0.0",
   "type": "module",
-  "author": "jackyzha0 <j.zhao2k19@gmail.com>",
+  "author": "NotDoneByOne",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
+  "homepage": "https://wiki.shotscope.ru",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/NotDoneByOne/ShotSCOPE-wiki.git"
   },
   "scripts": {
-    "quartz": "./quartz/bootstrap-cli.mjs",
-    "docs": "npx quartz build --serve -d docs",
+    "wiki": "./engine/bootstrap-cli.mjs",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
-    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"
+    "profile": "0x -D prof ./engine/bootstrap-cli.mjs build --concurrency=1"
   },
   "engines": {
     "npm": ">=10.9.2",
@@ -28,11 +27,10 @@
     "ssg",
     "digital-garden",
     "markdown",
-    "blog",
-    "quartz"
+    "blog"
   ],
   "bin": {
-    "quartz": "./quartz/bootstrap-cli.mjs"
+    "wiki": "./engine/bootstrap-cli.mjs"
   },
   "dependencies": {
     "@clack/prompts": "^0.11.0",
