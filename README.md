@@ -2,7 +2,7 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-Добро пожаловать в официальный репозиторий базы знаний проекта **ShotSCOPE**. 
+Добро пожаловать в официальный репозиторий базы знаний проекта **ShotSCOPE**.
 Этот сайт (доступный по адресу [wiki.shotscope.ru](https://wiki.shotscope.ru)) создан для того, чтобы стать открытой, живой и всегда актуальной энциклопедией для стрелкового сообщества.
 
 Здесь вы найдете всё: от инструкций по работе с нашим приложением до глубоких материалов по тактике, правилам и антидопингу.
@@ -10,10 +10,30 @@
 ## 🚀 О проекте
 
 Мы — команда студентов, создающих умного помощника для стрелков. База знаний — это наш способ поделиться опытом и структурировать информацию, которая помогает расти.
-*   **Сайт базы знаний:** [wiki.shotscope.ru](https://wiki.shotscope.ru)
-*   **Приложение ShotSCOPE:** [shotscope.ru](https://shotscope.ru)
-*   **Технологии:** Сайт собирается статическим генератором [Quartz](https://quartz.jzhao.xyz/) из Markdown-файлов, которые вы видите в этом репозитории. Удобнее всего редактировать их в [Obsidian](https://obsidian.md/).
-*   **Разработчки:** [NotDoneByOne](https://notdonebyone.ru)
+
+- **Сайт базы знаний:** [wiki.shotscope.ru](https://wiki.shotscope.ru)
+- **Приложение ShotSCOPE:** [shotscope.ru](https://shotscope.ru)
+- **Технологии:** Сайт собирает собственный статический генератор на TypeScript (папка `engine/`, конфиги `wiki.config.ts` и `wiki.layout.ts`) из Markdown-файлов, которые вы видите в этом репозитории. Удобнее всего редактировать их в [Obsidian](https://obsidian.md/). Дизайн сайта — дизайн-система ShotSCOPE Optic.
+- **Разработчки:** [NotDoneByOne](https://notdonebyone.ru)
+
+## 🌐 Языки
+
+Сайт двуязычный: русский и английский. Русские статьи лежат в корне `content/` и открываются по прежним адресам (`/ShotSCOPE/FAQ`), английские — в `content/en/` с английскими именами файлов и папок и адресами `/en/…` (`content/en/ShotSCOPE/FAQ.md` → `/en/ShotSCOPE/FAQ`). Переключатель RU/EN ведёт на перевод той же статьи. Подробнее о правилах — в разделе «Переводы» файла [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+## 💻 Локальный запуск
+
+Нужен Node.js версии 22 или выше (см. `.node-version`).
+
+```bash
+npm ci                    # установить зависимости
+npx wiki build            # собрать сайт в папку public/
+npx wiki build --serve    # собрать и открыть на http://localhost:8080
+npx tsc --noEmit          # проверка типов
+npm test                  # тесты
+npm run format            # форматирование (prettier)
+```
+
+Деплой выполняет GitHub Actions (`.github/workflows/deploy.yml`) на GitHub Pages.
 
 ## 🤝 Как помочь проекту?
 
@@ -22,16 +42,16 @@
 1.  **Нашли ошибку или опечатку?** Создайте **Issue** с пометкой `bug`.
 2.  **Хотите предложить новую тему?** Создайте **Issue** с пометкой `enhancement`.
 3.  **Хотите написать или исправить статью сами?**
-    *   Прочтите наш гайд для контрибьюторов: [`CONTRIBUTING.md`](CONTRIBUTING.md).
-    *   Ознакомьтесь со стилем оформления: [`STYLE_GUIDE.md`](STYLE_GUIDE.md).
-    *   Сделайте Fork репозитория, внесите изменения и откройте Pull Request (PR), используя [шаблон](.github/PULL_REQUEST_TEMPLATE.md).
+    - Прочтите наш гайд для контрибьюторов: [`CONTRIBUTING.md`](CONTRIBUTING.md).
+    - Ознакомьтесь со стилем оформления: [`STYLE_GUIDE.md`](STYLE_GUIDE.md) и шаблонами статей: [`TEMPLATES.md`](TEMPLATES.md).
+    - Сделайте Fork репозитория, внесите изменения и откройте Pull Request (PR), используя [шаблон](.github/PULL_REQUEST_TEMPLATE.md).
 
 Мы особенно приветствуем правки, касающиеся раздела `ShotSCOPE App`, чтобы документация всегда шла в ногу с обновлениями приложения.
 
 ## 📜 Лицензия
 
-Весь контент (тексты, изображения, инструкции) распространяется под лицензией 
-**Creative Commons Attribution-ShareAlike 4.0 International License**. 
+Весь контент (тексты, изображения, инструкции) распространяется под лицензией
+**Creative Commons Attribution-ShareAlike 4.0 International License**.
 Это означает, что вы можете делиться и адаптировать материалы, но с обязательным указанием авторства и распространением на тех же условиях.
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/

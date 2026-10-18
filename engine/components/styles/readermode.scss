@@ -1,0 +1,44 @@
+.readermode {
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  background: none;
+  border: none;
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: var(--r-el);
+  margin: 0;
+  text-align: inherit;
+  flex-shrink: 0;
+  transition: background-color var(--t-state) var(--ease);
+
+  &:hover {
+    background-color: var(--highlight);
+  }
+
+  & svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    fill: var(--darkgray);
+    stroke: var(--darkgray);
+    transition:
+      opacity var(--t-press) var(--ease),
+      fill var(--t-state) var(--ease),
+      stroke var(--t-state) var(--ease);
+  }
+}
+
+:root[reader-mode="on"] {
+  & .sidebar.left,
+  & .sidebar.right {
+    opacity: 0;
+    transition: opacity var(--t-state) var(--ease);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
