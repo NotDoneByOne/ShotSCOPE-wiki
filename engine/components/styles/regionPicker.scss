@@ -1,0 +1,245 @@
+@use "../../styles/variables.scss" as *;
+
+// The trigger mirrors the site search field and the dialog mirrors the search overlay,
+// so both pickers read as one family.
+.region-picker {
+  min-width: 0;
+
+  & > .region-picker-trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: var(--tap);
+    padding: 0 1rem 0 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid var(--gray);
+    border-radius: var(--r-el);
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--dark);
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+    transition:
+      border-color var(--t-state) var(--ease),
+      background-color var(--t-state) var(--ease);
+
+    &:hover,
+    &[aria-expanded="true"] {
+      border-color: var(--tertiary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--tertiary);
+      outline-offset: 2px;
+    }
+
+    & > .region-picker-name {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & > .region-picker-lang {
+      flex: 0 0 auto;
+      color: var(--ink-3);
+      font-size: 0.875rem;
+    }
+  }
+
+  & .region-picker-icon {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: var(--darkgray);
+    stroke-width: 1.5px;
+  }
+
+  // Header placement (below desktop): an icon button next to the theme and reader toggles.
+  @media all and not ($desktop) {
+    & > .region-picker-trigger {
+      width: var(--tap);
+      padding: 0;
+      justify-content: center;
+      border-color: transparent;
+
+      & > .region-picker-name,
+      & > .region-picker-lang {
+        display: none;
+      }
+
+      &:hover,
+      &[aria-expanded="true"] {
+        border-color: transparent;
+        background: var(--highlight);
+      }
+    }
+  }
+
+  & > .region-picker-container {
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    overflow-y: auto;
+    backdrop-filter: blur(22px);
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      opacity var(--t-state) var(--ease),
+      visibility 0s linear var(--t-state);
+
+    & > .region-picker-space {
+      width: min(560px, 90%);
+      margin: 12vh auto 2rem;
+      transform: translateY(8px);
+      transition: transform var(--t-state) var(--ease);
+
+      & > .region-picker-search {
+        display: block;
+        width: 100%;
+        min-height: var(--tap);
+        box-sizing: border-box;
+        margin: 0 0 1rem;
+        padding: 0.5em 1em;
+        border: 1px solid var(--gray);
+        border-radius: var(--r-el);
+        background: var(--glass-strong);
+        box-shadow: var(--shadow);
+        font-family: var(--bodyFont);
+        font-size: 1.1em;
+        color: var(--dark);
+        transition: border-color var(--t-state) var(--ease);
+
+        &:focus {
+          outline: none;
+          border-color: var(--tertiary);
+        }
+
+        &::-webkit-search-cancel-button {
+          display: none;
+        }
+      }
+
+      & > .region-picker-card {
+        max-height: calc(88vh - 12vh - var(--tap) - 3rem);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        border: 1px solid var(--line);
+        border-radius: var(--r-el);
+        background: var(--glass-strong);
+        box-shadow: var(--shadow);
+      }
+    }
+  }
+
+  &[data-open="true"] > .region-picker-container {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity var(--t-state) var(--ease);
+
+    & > .region-picker-space {
+      transform: none;
+    }
+  }
+
+  &[data-filtering="true"] {
+    & .region-picker-group,
+    & .region-picker-langs {
+      display: none;
+    }
+  }
+
+  & .region-picker-group {
+    margin: 0;
+    padding: 1rem 1rem 0.375rem;
+    font-size: 0.8125rem;
+    font-weight: $semiBoldWeight;
+    color: var(--ink-3);
+  }
+
+  & .region-picker-langs,
+  & .region-picker-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & > li {
+      margin: 0;
+    }
+  }
+
+  & .region-picker-langs > li > a,
+  & .region-picker-list > li[role="option"] {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: var(--tap);
+    padding: 0 1rem;
+    border-top: 1px solid var(--line);
+    color: var(--dark);
+    background: transparent;
+    font-weight: $normalWeight;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+      background-color var(--t-state) var(--ease),
+      color var(--t-state) var(--ease);
+
+    &:hover,
+    &.active {
+      background: var(--highlight);
+    }
+
+    & > .region-name {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    &.current {
+      color: var(--tertiary);
+    }
+  }
+
+  & .region-picker-list > li[role="option"] {
+    &[hidden] {
+      display: none;
+    }
+
+    & > .region-lang {
+      flex: 0 0 auto;
+      color: var(--ink-3);
+      font-size: 0.875rem;
+    }
+
+    &:not(.current) > .region-picker-check {
+      visibility: hidden;
+    }
+  }
+
+  & .region-picker-check {
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.75px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  & .region-empty {
+    padding: 1rem;
+    color: var(--ink-3);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    & > .region-picker-container,
+    & > .region-picker-container > .region-picker-space {
+      transition: none;
+    }
+  }
+}

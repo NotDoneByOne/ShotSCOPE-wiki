@@ -1,0 +1,110 @@
+@use "./base.scss";
+@use "./variables.scss" as *;
+
+// put your custom CSS here!
+
+.page .page-title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  & > a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: var(--dark);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--tertiary);
+    }
+  }
+
+  & .page-title-tag {
+    font-family: var(--codeFont);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--tertiary);
+  }
+}
+
+.page > #wiki-body .sidebar.left > .flex-component {
+  gap: 0.25rem !important;
+  min-width: 0;
+
+  & > div:first-child {
+    min-width: 0;
+  }
+
+  & .search {
+    min-width: 0;
+    max-width: none;
+  }
+
+  @media all and ($tablet) {
+    flex-wrap: wrap !important;
+    justify-content: flex-end;
+
+    & > div:first-child {
+      flex-basis: 100% !important;
+    }
+  }
+
+  // On desktop region and theme live in the right sidebar; search shares a row with reader mode.
+  @media all and ($desktop) {
+    & > div:has(> .region-picker),
+    & > div:has(> .darkmode) {
+      display: none;
+    }
+  }
+}
+
+.page > #wiki-body .sidebar.right > .flex-component:has(.region-picker) {
+  align-self: stretch;
+  gap: 0.25rem !important;
+
+  & > div:has(> .region-picker) {
+    min-width: 0;
+  }
+
+  @media all and not ($desktop) {
+    display: none !important;
+  }
+}
+
+@media all and ($mobile) {
+  .page > #wiki-body .sidebar.left {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    padding: 0.75rem 0;
+    min-width: 0;
+
+    & .page-title {
+      flex: 1 1 0;
+      min-width: 0;
+      font-size: 1.25rem;
+    }
+
+    & .spacer {
+      display: none;
+    }
+
+    & > .flex-component {
+      flex: 1 0 100%;
+      min-width: 0;
+      gap: 0.25rem !important;
+
+      & > div:first-child {
+        min-width: 0;
+      }
+    }
+
+    & .search {
+      min-width: 0;
+      max-width: none;
+      flex-grow: 1;
+    }
+  }
+}

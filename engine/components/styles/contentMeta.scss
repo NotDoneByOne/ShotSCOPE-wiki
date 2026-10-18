@@ -1,0 +1,16 @@
+.content-meta {
+  margin-top: 0;
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+  color: var(--ink-3);
+
+  &[show-comma="true"] {
+    > *:not(:last-child) {
+      margin-right: 8px;
+
+      &::after {
+        content: ",";
+      }
+    }
+  }
+}
