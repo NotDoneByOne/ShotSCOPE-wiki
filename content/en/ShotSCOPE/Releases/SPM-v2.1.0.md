@@ -50,8 +50,6 @@ On the target screen, shots are collected in a side panel: score, number and sho
 
 ## Fixed
 
-**Sign-up in English.** With the English interface, sign-up no longer stops at the last step with a reference data error.
-
 **A ten was counted as a nine.** The ring reference now repairs itself, and the scores of saved shots, series and events have been recalculated.
 
 **Target for МП-60.** You can add a target in МП-60 sessions again — the button used to do nothing.
