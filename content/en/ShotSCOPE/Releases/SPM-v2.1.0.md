@@ -22,6 +22,8 @@ The discipline reference grew from 7 to 23 events under the Russian Shooting Uni
 
 **Stages in multi-stage events.** МВ-3x40 and МВ-3x20 are split into kneeling, prone and standing stages, and КП-60 into МП-30 and МП-30С. Stages are shown on the discipline card.
 
+**Targets by stage.** In competitions and control shooting, targets are set up for you: for МП-60 and КП-60 the first three scoring targets are the round target No. 4, the next three are the silhouette No. 5. In sighting and dry training with marking, you choose the target when you add it.
+
 **Centerfire pistol.** A new weapon type for КП-60 — **Pistol (ЦБ)**. Pick it when you add a weapon.
 
 ### Knowledge base in the app
