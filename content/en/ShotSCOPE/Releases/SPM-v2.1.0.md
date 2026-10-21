@@ -6,7 +6,7 @@ tags:
   - minor-update
   - free
 description: "16 new disciplines with EVSK rank standards, the knowledge base inside the app, English language, and correct scoring of tens."
-modified: 2026-10-20
+modified: 2026-10-21
 lang: en
 translationKey: release-spm-2-1-0
 ---
@@ -50,6 +50,8 @@ On the target screen, shots are collected in a side panel: score, number and sho
 
 ## Fixed
 
+**Sign-up in English.** With the English interface, sign-up no longer stops at the last step with a reference data error.
+
 **A ten was counted as a nine.** The ring reference now repairs itself, and the scores of saved shots, series and events have been recalculated.
 
 **Target for МП-60.** You can add a target in МП-60 sessions again — the button used to do nothing.
@@ -68,4 +70,4 @@ There's nothing to move by hand: records, weapons and your profile stay in place
 
 The app remains completely free. Support: [bug@shotscope.ru](mailto:bug@shotscope.ru)
 
-*Official website: [shotscope.ru](https://shotscope.ru). Release date: 20 October 2026. Version: 2.1.0. NotDoneByOne team © 2026. All rights reserved.*
+*Official website: [shotscope.ru](https://shotscope.ru). Release date: 21 October 2026. Version: 2.1.0. NotDoneByOne team © 2026. All rights reserved.*
