@@ -3,7 +3,7 @@ title: FAQ
 description: "Answers to common questions about ShotSCOPE SPM: features, data, bugs, and price."
 lang: en
 translationKey: shotscope-faq
-modified: 2026-10-18
+modified: 2026-11-24
 ---
 Here are answers to the questions people ask most often about ShotSCOPE SPM. If you didn't find what you need, write to [notdonebyone@internet.ru](mailto:notdonebyone@internet.ru) or in the community Telegram channel.
 
@@ -11,17 +11,17 @@ Here are answers to the questions people ask most often about ShotSCOPE SPM. If 
 
 ### Can I plot result charts for EVSK exercises (date — result — comment)?
 
-Yes, the feature is in development. Charts for EVSK exercises will arrive in one of the upcoming updates. Follow the news in the [[en/ShotSCOPE/Releases/_index|Releases]] section.
+Not yet. We have noted this request. We announce new features in the [[en/ShotSCOPE/Releases/_index|Releases]] section when they ship.
 
 ### Will there be a competition calendar?
 
-Yes. A calendar of competitions and training sessions is one of the next features. You will be able to plan starts, mark important dates, and return to the results of past performances.
+Not yet. We have noted this request. We announce new features in the [[en/ShotSCOPE/Releases/_index|Releases]] section when they ship.
 
 ## Data
 
 ### How do I restore my data when I change phones?
 
-For now, data is transferred manually when you change devices. We are working on cloud sync: it will restore your history of training sessions and competitions, give you access to your data from several devices, and keep your results even if your phone is damaged. The feature is expected in one of the 2026 updates.
+For now, data is transferred manually when you change devices. When automatic transfer becomes available, we will announce it in the [[en/ShotSCOPE/Releases/_index|Releases]] section.
 
 ## Countries and targets
 
